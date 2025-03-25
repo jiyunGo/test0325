@@ -1,0 +1,81 @@
+@charset "utf-8";
+
+/*헤더*/
+header{width: 100%; height: 64px; position: fixed; z-index: 999;}
+.h_wrap{width: 100%; height: 64px; background-color: #222;}
+.h_wrap h1{width: 100%; height: auto; text-align: center; color: #ffd200;
+    font-family: 'netmarbleB';
+    font-size: 25px;
+    text-shadow: 3px 3px 2px #000; line-height: 64px;}
+
+.ham_btn{width: 30px; height: 22px; position: absolute; top: 19px; right: 18px; display: block;}
+.btn_line{width: 30px; height: 3px; border-radius: 2px; background-color: #ffd200; margin-bottom: 8px;
+}
+
+.h_nav{width: 100%; height: auto; background-color: #222;}
+.gnb{width: 100%; height: auto; display: none; z-index: 999;
+    background-color: #222;}
+.gnb>li{width: 100%; height: auto; text-align: start; color: #fff;
+    padding: 1.4vw auto; border-bottom: 1px solid #afafaf; 
+    background-color: #222;
+    font-size: 2vw; transition: all 0.3s;}
+.gnb>li>a{line-height: 5vh; margin-left: 20px;}
+
+.gnb>li:hover{background-color: #666; color: #fff;}
+
+.gnb_sub{display: none; width: 100%; height: auto;}
+.gnb_sub>li{width: 90%; height: 35px; font-size: 1.5vw; margin: 1vw auto 0; 
+    border-bottom: 1px solid #8a8a8a; align-items: center; }
+.gnb_sub>li:last-child{margin-bottom: 10px;}
+.gnb_sub>li>a{line-height: 4vh;}
+.gnb_sub>li:hover{ background-color: #555; border-bottom: 1px solid #fff;}
+
+.h_shortcut{width: 100%; height: auto; display: flex;
+    justify-content: space-between; position: relative; margin-top: 100px; margin-bottom: 0;}
+.h_adress{width: 50%; height: auto; margin-left: 20px;}
+.h_adress>li{width: 90%; height: auto; font-size: 13px; margin-bottom: 20px; color: #888;}
+.h_adress>li:hover{color: #dbdbdb;}
+
+.h_sns{width: auto; height: auto; display: flex; position: absolute; bottom: 20px; right: 0;}
+.h_sns li{width: 35px; height: 35px; margin-right: 20px; overflow: hidden;}
+.h_sns li img{width: 100%; height: 100%; border-radius: 5px;}
+.h_sns li img:hover{scale: 1.1;}
+
+
+
+/*태블릿 시작*/
+@media all and (min-width:780px){
+    header{height: 80px;}
+    .h_wrap{width: 100%; height: 80px;}
+    .h_wrap h1{width: 20%; height: auto; text-align:start; padding-left: 2vw;
+        font-size: 32px; line-height: 80px;}
+    .ham_btn{display: none;}
+    .btn_line{display: none;}
+    .h_shortcut{display: none;}
+
+    .gnb{display: flex; padding-bottom: 0; width: 70%;
+        position: absolute; top: 32px; right: 0; background-color: #222;}
+    .gnb>li{text-align: center; font-size: 1.3vw; border: 0;
+        color: #fff;  background-color: inherit;}
+    .gnb>li>a{margin: 0 auto;}
+    .gnb>li:hover{ background-color: #fff; color: #222;}
+    
+    .gnb_sub>li{font-size: 0.9vw; margin-top: 5px; padding-top: 5px; }
+    .gnb_sub>li:hover{color: #fff; border-bottom: 1px solid #fff;}
+
+    
+}
+
+
+/*pc시작*/
+@media all and (min-width:1440px){
+    header{height: 90px;}
+    .h_wrap{ height: 100%;}
+    .h_wrap h1{font-size: 38px; line-height: 90px;}
+
+
+
+    .gnb{position: absolute; top: 42px; right: 0;}
+    .gnb>li{}
+    .gnb_sub>li{font-size: 0.8vw;}
+}

@@ -1,0 +1,14 @@
+@charset "utf-8";
+@font-face {
+    font-family: 'netmarbleB';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_four@1.1/netmarbleB.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@import url("https://cdn.jsdelivr.net/gh/wanteddev/wanted-sans@v1.0.3/packages/wanted-sans/fonts/webfonts/variable/split/WantedSansVariable.min.css");
+@import url("https://cdn.jsdelivr.net/gh/wanteddev/wanted-sans@v1.0.3/packages/wanted-sans/fonts/webfonts/static/split/WantedSans.min.css");
+*{margin: 0 ; padding: 0; }
+ul,li{list-style: none; font-family: "Wanted Sans";}
+a{text-decoration: none; color: inherit; }
+button{border: 0;}
+div{font-family: "Wanted Sans";}

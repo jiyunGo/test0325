@@ -1,0 +1,246 @@
+@charset "utf-8";
+.sec_name{color: #222; width: 90%; height: auto;
+    margin-left: 5%; font-size: 28px; font-family: "Wanted Sans";}
+
+
+
+/*베너*/
+main{width: 100%; height: 100%; z-index: 900; padding-top: 64px;}
+main img{width: 100%; height: 100%;}
+.main_banner .mob{display: block;}
+.main_banner .tap{display: none;}
+.main_banner .pc{display: none;}
+
+/*역사*/
+.history{width: 100%; height: 400px;  background-color: #272726; margin: 0 auto 80px;}
+.history_con{width: 90%; height: auto;
+  color: aliceblue; font-size: 17px; text-align: start; margin: 25px auto ;}
+
+.his_txt h2{width: 90%; height: auto; color: aliceblue;
+    margin: 25px auto; font-size: 28px; text-align: start; font-family: "Wanted Sans";}
+.his_txt{width: 90%; height: auto; padding-top: 30px; line-height: 35px;}
+
+/*인재채용*/
+.carrier{width: 100%; height: 100%;}
+.carrier h2{width: 100%; margin-left: 0;}
+.carrier_con{width: 90%; height: auto; display: flex;
+  margin: 35px auto; justify-content: space-between;}
+.carrier_txt{width: 100%; height: auto;}
+.carrier .pc{display: none;}
+.carrier img{width: 100%; height: 100%;}
+
+/*정도경영*/
+.jungdo{width: 100%; height: 100%; margin-top: 45px;}
+.jung_tit{width: 100%; height: 100%; display: flex;
+  justify-content: space-around; margin-top: 20px;}
+.jung_tit li{width: calc(100% / 5); height: 3vh; margin-right: 0; margin-left: 15px;
+  background-color: #ffd200; color: #fff; font-size: 2.3vw; padding: 5px 0 5px;
+  border-radius: 32px 5px 32px; line-height: 3vh;}
+.jung_btn{text-align: center;
+  cursor: pointer;}
+.jung_btn:hover{background-color: #444;}
+
+.jung_swipe{width: 100%; height: 100%;}
+.jung_slide{width: 100%; height: 100%; margin: 10px auto 0; align-items: center;}
+.jung_txt{width: 330px; height: 60px;
+  margin: 25px auto 0; overflow: hidden;
+  text-align: center; justify-content: space-between;
+  font-size: 15px; position: relative;}
+.jung_text{width: 330px; height: 60px; overflow: hidden;}
+
+.jung_img{width: 330px; height: 330px; position: relative; overflow: hidden; margin: 20px auto;}
+.jung_image{width: 330px; height: 330px; margin: 0 auto; align-items: center;}
+.jung_image h3{margin-bottom: 10px; font-size: 17px; text-align: center;}
+.jung_image img{width: 85%; height: 85%; border-radius: 50%; margin-left: 7.5%;}
+
+/*뉴스*/
+.news{margin: 60px auto 0;}
+.swiper-wrapper{
+  transition-timing-function: linear;
+}
+.swiper { margin-top: 15px;
+  width: 90%;
+  height: 100%;
+}
+
+.news .swiper-slide {
+  width: calc(100% / 6);
+  height: calc(100% / 6);
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  border-radius: 5%
+}
+
+.news .swiper-slide a {
+  display: block; 
+  width: 85%;
+  height: 85%;
+  border-radius: 10%;
+  overflow: hidden;
+} 
+.swiper-slide a img
+{width: 100%; height: 100%;}
+.swiper-slide a:hover img{scale: 1.1;}
+
+/* .news_img{width: 100%; height: 100%; border-radius: 5%;} */
+/* .news_img img{width: 100%; height: 100%;} */
+
+/*지도*/
+.map{width: 90%; height: auto; margin: 60px auto 0;}
+.map_con{}
+.map h2{margin-left: 0;}
+iframe{width: 100%; height: 200px; border-radius: 5%; margin: 0 auto;}
+.google{width: 100%; height: 100%; margin: 20px auto;}
+
+.map_contact{width: 100%; height: auto; text-align: center; margin: 20px auto 0;}
+.map_contact p{margin-top: 20px;}
+.map_adress{font-size: 23px; font-weight: 600; }
+
+
+/*푸터*/
+footer{width: 100%; height: auto; background-color: #111;
+  position: relative; color: #fff; margin-top: 30px;}
+.f_logo{width: 90%; height: auto; font-size: 23px; font-family: 'netmarbleB';
+  padding-left: 5%; padding-top: 5%; display: block;}
+footer h4{display: block;}
+
+.f_wrap{width: 100%; height: auto;}
+.f_menu{display: flex; width: 90%; height: auto; position: relative; color: #fff; margin: 30px auto 0; justify-content: space-between;}
+.f_gnb{width: 45%; font-size: 11px;}
+.f_gnb>a{display: block;}
+.f_line{width: 2px; height: 80px; background-color: #fff;}
+.f_adress{width: 45%; font-size: 11px;}
+.f_adress>a{width:auto; display: block;}
+
+.f_menu2{display: flex; justify-content: space-between; width: 90%; height: auto; margin: 40px auto 0;}
+.copyright{width: 50%; height: 50px; font-size: 1.3vw; line-height: 50px;}
+.f_sns{width: 35%; height: auto; display: flex; justify-content: space-around; align-items: center;}
+.f_sns li{width: 5vw; height: 5vw; }
+.f_sns li img{width: 100%; height: 100%; border-radius: 3px;}
+.f_sns li img:hover{scale: 1.1;}
+
+/*태블릿 시작*/
+@media all and (min-width:780px){
+  .sec_name{font-size: 40px;}
+  /*베너*/
+  main{padding-top: 80px;}
+  .main_banner .mob{display: none;}
+  .main_banner .tap{display: block;}
+
+  /*역사*/
+  .history{ margin: 0 auto 30px;}
+  .his_txt{display: flex; margin: 0 auto; justify-content: space-around;}
+  .his_txt h2{width: 45%; font-size: 40px; line-height: 50px; margin-left: 0;}
+  .history_con{width: 45%; line-height: 50px; font-size: 20px;}
+
+  /*인재채용*/
+  .carrier{display: flex; width: 90%; margin: 0 auto; justify-content: space-between;}
+  .carrier h2{margin-left: 0;}
+  .carrier_con{width: 90%; height: 100%; font-size: 17px; display: block; align-items: center;}
+  .carrier_txt{ margin-top: 30px; line-height: 4vw;}
+  .carrier img{width: 70%; height: 70%;}
+  
+  /*정도경영*/
+  .jungdo{margin-top: 60px;}
+  .jung_tit{margin-top: 50px;}
+  .jung_tit li{font-size: 2vw; height: 2.7vw; line-height: 2.7vw;
+    border-radius: 35px 6px 35px;}
+
+  .jung_con{}
+  .jung_swipe{display: block;}
+  .jung_slide{display: flex; flex-direction: row-reverse; margin-top: 40px;}
+
+  .jung_txt{width: 200px; height: 100px; font-size: 21px; line-height: 30px;}
+  .jung_text{width: 200px; height: 100px;}
+  .jung_text h3{font-size: 24px; margin-bottom: 10px;}
+
+
+  .jung_img{width: 500px; height: 500px; margin: 0 auto;}
+  .jung_image{width: 500px; height: 500px; margin: 7.5% auto;}
+  .jung_image h3{height: auto; font-size: 24px; float: right; line-height: 425px; margin-bottom: 0; margin-left: 5px;}
+  .jung_image img{margin-left: 0;}
+
+  /*지도*/
+    .google{width: 50%; height: 100%;}
+    .map_con{width: 100%; display: flex; position: relative; justify-content: space-between;}
+    iframe{width: 110%; height: 300px;}
+    .map_contact{width: 30%; height: 100%; text-align: start;}
+    .map_contact p{line-height: 35px;}
+    
+
+  /*푸터*/
+  footer{}
+  .f_wrap{}
+  .f_logo{padding-top: 3%; font-size: 28px;}
+  .f_menu{}
+  .f_gnb{display: none;}
+  .f_line{display: none;}
+  .f_adress{width: 60%; display: flex; text-align: center; font-size: 14px;}
+  .f_adress>a{margin-right: 30px;}
+  .f_menu2{margin: 20px auto 0;}
+  .copyright{font-size: 9px;}
+  .f_sns{width: 20%; padding-bottom: 15px;}
+  .f_sns li{width: 3vw; height: 3vw;}
+
+}
+
+/*pc시작*/
+@media all and (min-width:1440px){
+  .sec_name{font-size: 90px;}
+    /*베너*/
+    main{padding-top: 90px;}
+    .main_banner .tap{display: none;}
+    .main_banner .pc{display: block;}
+  
+      /*역사*/
+    .history{}
+    .his_txt{}
+    .his_txt h2{font-size: 70px; line-height: 90px;}
+    .history_con{line-height: 60px; font-size: 23px;}
+
+    /*인재채용*/
+    .carrier{margin: 80px auto;}
+    .carrier_con{font-size: 23px;}
+      .carrier_txt{ margin-top: 30px;}
+      .carrier .mob{display: none;}
+      .carrier .pc{display: block;}
+
+    /*정도경영*/
+    .jungdo{margin: 80px auto;}
+
+    .jung_tit li{font-size: 2vw; height: 2.9vw; line-height: 2.9vw; border-radius: 40px 10px 40px;}
+    .jung_btn{height: 3vw;}
+
+    .jung_con{}
+    .jung_swipe{display: block;}
+    .jung_slide{display: flex; flex-direction: row-reverse; margin-top: 40px;}
+  
+    .jung_txt{width: 400px; height: 200px; font-size: 27px;}
+    .jung_text{width: 400px; height: 200px; line-height: 55px;}
+    .jung_text h3{font-size: 40px; margin-bottom: 30px;}
+  
+  
+    .jung_img{width: 650px; height: 650px; margin: 0 auto;}
+    .jung_image{width: 650px; height: 650px; margin: 7.5% auto;}
+    .jung_image h3{height: auto; font-size: 40px; float: right; line-height: 520px; margin-bottom: 0; margin-left: 5px;}
+    .jung_image img{width: 80%; height: 80%; margin-left: 0;}
+    /*뉴스*/
+    .news{margin: 60px auto;}
+    .swiper{margin-top: 50px;}
+    .news.swiper-slide a {width: 70%; height: 70%;}
+    .swiper.mySwiper.slide2{display: none;}
+    /*지도*/
+.map{margin: 80px auto 0;}
+
+    iframe{height: 400px;}
+    .map_contact{text-align: end; margin-top: 20px;}
+    .map_contact p{font-size: 27px; margin-top: 35px;}
+    .map_adress{font-size: 40px; font-weight: 600; }
+    /*푸터*/
+    
+}/*pc끝*/
