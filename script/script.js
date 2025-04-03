@@ -207,7 +207,7 @@ AOS.init()
     pc()
   }
 
-// $(window).resize(function(){
-//   document.location.reload();
-// })
+$(window).resize(function(){
+  document.location.reload();
+})
 })//document
