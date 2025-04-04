@@ -206,11 +206,11 @@ AOS.init()
   }else{
     pc()
   }
-//모바일 화면끊김
 $(window).resize(function(){
   document.location.reload();
 })
-    lastWidth = window.innerWidth;
+//모바일 화면끊김
+lastWidth = window.innerWidth;
 $(window).resize(function(){
 if(window.innerWidth != lastWidth){
 	location.reload();
