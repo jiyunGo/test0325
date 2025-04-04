@@ -12,3 +12,4 @@ ul,li{list-style: none; font-family: "Wanted Sans";}
 a{text-decoration: none; color: inherit; }
 button{border: 0;}
 div{font-family: "Wanted Sans";}
+body {overscroll-behavior : contain;}
